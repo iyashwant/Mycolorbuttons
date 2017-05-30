@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.iyashwant.mycolorbuttons.MainActivity">
+
+    <Button
+        android:id="@+id/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_red"
+        android:text="red"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/green"
+        android:layout_toStartOf="@+id/green"
+        android:layout_marginRight="74dp"
+        android:layout_marginEnd="74dp" />
+
+    <Button
+        android:id="@+id/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corners"
+        android:text="green"
+        android:layout_alignBaseline="@+id/blue"
+        android:layout_alignBottom="@+id/blue"
+        android:layout_toLeftOf="@+id/blue"
+        android:layout_toStartOf="@+id/blue"
+        android:layout_marginRight="64dp"
+        android:layout_marginEnd="64dp" />
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_blue"
+        android:text="blue"
+        android:layout_marginRight="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_alignBaseline="@+id/reset"
+        android:layout_alignBottom="@+id/reset"
+        android:layout_toLeftOf="@+id/reset"
+        android:layout_toStartOf="@+id/reset" />
+
+    <TextView
+        android:id="@+id/redv"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        android:textColor="@color/red"
+        android:layout_alignBaseline="@+id/greenv"
+        android:layout_alignBottom="@+id/greenv"
+        android:layout_alignLeft="@+id/red"
+        android:layout_alignStart="@+id/red"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <TextView
+        android:id="@+id/greenv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Value"
+        android:textColor="@color/green"
+        android:layout_alignBaseline="@+id/bluev"
+        android:layout_alignBottom="@+id/bluev"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/bluev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        android:textColor="@color/blue"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/blue"
+        android:layout_alignRight="@+id/blue"
+        android:layout_alignEnd="@+id/blue" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:background="@drawable/round_reset"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignBaseline="@+id/red"
+        android:layout_alignBottom="@+id/red"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:background="@drawable/spiner_back"
+        android:popupBackground="@drawable/spiner_back"
+        android:layout_width="wrap_content"
+
+        android:layout_height="30dp"
+        android:entries="@array/increase_values"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/blue"
+        android:layout_toStartOf="@+id/blue"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:text="Landcape Mode"
+
+        android:textSize="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:textColor="@color/colorPrimaryDark"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Colors</string>
+    <string-array name="increase_values">
+        <item>Increase Rate</item>
+        <item>" (Default) 1"</item>
+        <item>"           2"</item>
+        <item>"           4"</item>
+        <item>"           8"</item>
+        <item>"          16"</item>
+        <item>"          32"</item>
+    </string-array>
+</resources>

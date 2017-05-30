@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.iyashwant.mycolorbuttons.MainActivity">
+
+    <Button
+        android:id="@+id/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="201dp"
+        android:background="@drawable/round_red"
+        android:text="red" />
+
+    <Button
+        android:id="@+id/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/red"
+        android:layout_alignStart="@+id/red"
+        android:layout_below="@+id/red"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_corners"
+        android:text="green" />
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/green"
+        android:layout_alignStart="@+id/green"
+        android:layout_below="@+id/green"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/round_blue"
+        android:text="blue" />
+
+    <TextView
+        android:id="@+id/redv"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/red"
+        android:layout_alignBottom="@+id/red"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/red"
+        android:layout_toRightOf="@+id/red"
+        android:text="Value"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/greenv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/green"
+        android:layout_alignBottom="@+id/green"
+
+        android:layout_alignLeft="@+id/redv"
+        android:layout_alignStart="@+id/redv"
+        android:text="Value"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/bluev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/blue"
+        android:layout_alignBottom="@+id/blue"
+        android:layout_alignLeft="@+id/greenv"
+        android:layout_alignStart="@+id/greenv"
+        android:text="Value"
+        android:textColor="@color/blue" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/blue"
+        android:layout_alignLeft="@+id/blue"
+        android:layout_alignStart="@+id/blue"
+        android:background="@drawable/round_reset"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:background="@drawable/spiner_back"
+        android:popupBackground="@drawable/spiner_back"
+        android:layout_width="wrap_content"
+
+        android:layout_height="30dp"
+        android:entries="@array/increase_values"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignBaseline="@+id/green"
+        android:layout_alignBottom="@+id/green"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
